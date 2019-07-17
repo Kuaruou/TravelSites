@@ -1,0 +1,85 @@
+body,
+input,
+button,
+select,
+textarea {
+    font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
+    font-size: 108%;
+}
+
+.carousel {
+    width: 100%;
+}
+
+.carousel-item {
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50px;
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.carousel-caption .title {
+    margin: 0 auto;
+    width: 600px;
+    height: 200px;
+    color: #000;
+    background-color: beige;
+    opacity: 0.7;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.carousel-caption .title h1 {
+    font-size: 40px;
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-caption select {
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.selectDistrict {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.selectDistrict option {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.titleDistrict h3 {
+    font-weight: 600;
+}
+
+.content {
+    max-width: 70%;
+    margin: 0 auto;
+    /* 保持畫面滿版 */
+    min-height: calc(100vh - 400px - 5em)
+}
+
+.button-info {
+    text-align: center;
+}
+
+.footer {
+    height: 5em;
+    color: beige;
+    background-color: blueviolet;
+}
+
+.footer p {
+    padding-top: 2em;
+}
