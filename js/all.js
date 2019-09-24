@@ -55,7 +55,7 @@ function loadAll() {
             '<span class="card-span"><b>時間:</b>' + data[i].Opentime + '</span>' +
             '</div>' +
             '<div class="card-body d-flex flex-column">' +
-            '<button type="button" class="introBtn button button-info mt-auto btn btn-secondary" data-toggle="modal" data-target="#ModalCenter" onclick="showIntro(&#39;' + id + '&#39;)">景點介紹</button>' +
+            '<button type="button" class="introBtn button button-info mt-auto btn btn-primary" data-toggle="modal" data-target="#ModalCenter" onclick="showIntro(&#39;' + id + '&#39;)">景點介紹</button>' +
             '</div>' +
             '</div>' +
             '</div>';
@@ -81,7 +81,7 @@ function loadRegion(region) {
                 '<span class="card-span"><b>時間:</b>' + item.Opentime + '</span>' +
                 '</div>' +
                 '<div class="card-body d-flex flex-column">' +
-                '<button type="button" class="introBtn button button-info mt-auto btn btn-secondary" data-toggle="modal" data-target="#ModalCenter" onclick="showIntro(&#39;' + id + '&#39;)">景點介紹</button>' +
+                '<button type="button" class="introBtn button button-info mt-auto btn btn-primary" data-toggle="modal" data-target="#ModalCenter" onclick="showIntro(&#39;' + id + '&#39;)">景點介紹</button>' +
                 '</div>' +
                 '</div>' +
                 '</div>';
