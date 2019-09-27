@@ -49,10 +49,9 @@ function loadAll() {
             '<div class="card-body d-flex flex-column">' +
             '<img class="card-img-top" style="height: 12rem;" src="' + data[i].Picture1 + '" alt="">' +
             '<span class="card-title"><b>' + data[i].Name + '</b></span>' +
-            '<span class="card-span"><b>' + data[i].Zone + '</b></span>' +
-            '<span class="card-span"><b>地址:</b>' + data[i].Add + '</span>' +
-            '<span class="card-span"><b>電話:</b>' + data[i].Tel + '</span>' +
-            '<span class="card-span"><b>時間:</b>' + data[i].Opentime + '</span>' +
+            '<span class="card-span"><i class="fas fa-map-marker-alt" style="width: 18px"></i><b>地址:</b>' + data[i].Add + '</span>' +
+            '<span class="card-span"><i class="fas fa-phone-square-alt" style="width: 18px"></i><b>電話:</b>' + data[i].Tel + '</span>' +
+            '<span class="card-span"><i class="far fa-clock" style="width: 18px"></i><b>時間:</b>' + data[i].Opentime + '</span>' +
             '</div>' +
             '<div class="card-body d-flex flex-column">' +
             '<button type="button" class="introBtn button button-info mt-auto btn btn-info" data-toggle="modal" data-target="#ModalCenter" onclick="showIntro(&#39;' + id + '&#39;)">景點介紹</button>' +
@@ -75,10 +74,9 @@ function loadRegion(region) {
                 '<div class="card-body d-flex flex-column">' +
                 '<img class="card-img-top" style="height: 12rem;" src="' + item.Picture1 + '" alt="">' +
                 '<span class="card-title"><b>' + item.Name + '</b></span>' +
-                '<span class="card-span"><b>' + item.Zone + '</b></span>' +
-                '<span class="card-span"><b>地址:</b>' + item.Add + '</span>' +
-                '<span class="card-span"><b>電話:</b>' + item.Tel + '</span>' +
-                '<span class="card-span"><b>時間:</b>' + item.Opentime + '</span>' +
+                '<span class="card-span"><i class="fas fa-map-marker-alt" style="width: 18px"></i><b>地址:</b>' + item.Add + '</span>' +
+                '<span class="card-span"><i class="fas fa-phone-square-alt" style="width: 18px"></i><b>電話:</b>' + item.Tel + '</span>' +
+                '<span class="card-span"><i class="far fa-clock" style="width: 18px"></i><b>時間:</b>' + item.Opentime + '</span>' +
                 '</div>' +
                 '<div class="card-body d-flex flex-column">' +
                 '<button type="button" class="introBtn button button-info mt-auto btn btn-info" data-toggle="modal" data-target="#ModalCenter" onclick="showIntro(&#39;' + id + '&#39;)">景點介紹</button>' +
