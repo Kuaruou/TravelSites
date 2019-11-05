@@ -28,7 +28,7 @@ loadAll();
 selectValue.addEventListener('change', mainFunction)
 
 function mainFunction(e) {
-    let title = document.querySelector('.titleName');
+    let title = document.querySelector('.content__titleDistrict');
     let titleContent = e.target.value;
     title.textContent = titleContent;
     if (titleContent === "高雄市景點") {
