@@ -1,7 +1,6 @@
 // 串接API
 var url = 'data/datastore_search.json';//'https://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97';
 
-
 var initialData = $.ajax({
     type: "GET",
     url: url,
@@ -76,7 +75,7 @@ function loadRegion(region) {
                 '<img class="card-img-top" style="height: 12rem;" src="' + item.Picture1 + '" alt="">' +
                 '<span class="card-title"><b>' + item.Name + '</b></span>' +
                 //'<span class="card-span"><b>' + item.Zone + '</b></span>' +
-                '<span class="card-span"><i class="fas fa-map-marker-alt" style="width: 18px"><b>地址:</b>' + item.Add + '</span>' +
+                '<span class="card-span"><i class="fas fa-map-marker-alt" style="width: 18px"></i><b>地址:</b>' + item.Add + '</span>' +
 
                 '<span class="card-span"><i class="fas fa-phone-square-alt" style="width: 18px"></i><b>電話:</b>' + item.Tel + '</span>' +
                 '<span class="card-span"><i class="far fa-clock" style="width: 18px"></i><b>時間:</b>' + item.Opentime + '</span>' +
