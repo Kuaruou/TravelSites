@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="lang="zh-tw"">
+<html lang="lang=" zh-tw"">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>高雄市觀光景點</title>
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
 </head>
 
@@ -21,45 +22,36 @@
             <li data-target="#carousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner position-relative">
-            <div class="carousel-item active bg-cover"
+            <div class="carousel-item carousel__inner__pic active bg-cover"
                 style="background-image:url(https://images.unsplash.com/photo-1551624750-a6d4e0e7f6cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) ">
             </div>
-            <div class="carousel-item bg-cover "
+            <div class="carousel-item carousel__inner__pic bg-cover "
                 style="background-image:url(https://images.unsplash.com/photo-1552311355-f1a647b5d198?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80)">
             </div>
-            <div class="carousel-item bg-cover "
+            <div class="carousel-item carousel__inner__pic bg-cover "
                 style="background-image:url(https://images.unsplash.com/photo-1542465233-4b4770aaa1bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)">
             </div>
-            <div class="carousel-caption">
-                <div class="title">
+            <div class="carousel__inner__caption">
+                <div class="carousel__inner__caption__title">
                     <h1>旅遊資訊</h1>
+                    <div class="selectDistrict">
+                        <!-- 行政區下拉選單 -->
+                        <select class="selectDistrict">
+                            <option class="districtOpt" value="高雄市景點">請選擇行政區</option>
+                            <option class="districtOpt" value="楠梓區">楠梓區</option>
+                            <option class="districtOpt" value="左營區">左營區</option>
+                            <option class="districtOpt" value="鼓山區">鼓山區</option>
+                            <option class="districtOpt" value="三民區">三民區</option>
+                            <option class="districtOpt" value="苓雅區">苓雅區</option>
+                            <option class="districtOpt" value="新興區">新興區</option>
+                            <option class="districtOpt" value="前金區">前金區</option>
+                            <option class="districtOpt" value="鹽埕區">鹽埕區</option>
+                            <option class="districtOpt" value="前鎮區">前鎮區</option>
+                            <option class="districtOpt" value="旗津區">旗津區</option>
+                            <option class="districtOpt" value="小港區">小港區</option>
+                        </select>
+                    </div>
 
-                    <!-- 行政區下拉選單 -->
-                    <select class="selectDistrict">
-                        <option class="districtOpt" value="高雄市景點">請選擇行政區</option>
-                        <option class="districtOpt" value="楠梓區">楠梓區</option>
-                        <option class="districtOpt" value="左營區">左營區</option>
-                        <option class="districtOpt" value="鼓山區">鼓山區</option>
-                        <option class="districtOpt" value="三民區">三民區</option>
-                        <option class="districtOpt" value="苓雅區">苓雅區</option>
-                        <option class="districtOpt" value="新興區">新興區</option>
-                        <option class="districtOpt" value="前金區">前金區</option>
-                        <option class="districtOpt" value="鹽埕區">鹽埕區</option>
-                        <option class="districtOpt" value="前鎮區">前鎮區</option>
-                        <option class="districtOpt" value="旗津區">旗津區</option>
-                        <option class="districtOpt" value="小港區">小港區</option>
-                    </select>
-                    <!-- <div class="dropdown-box">
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                選擇行政區
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#" id="selectArea"></a>
-              </div>
-            </div>
-          </div> -->
                 </div>
             </div>
         </div>
@@ -74,8 +66,8 @@
     </div>
 
     <div class="content pt-5">
-        <div class="titleDistrict">
-            <h3 class="titleName text-primary text-center">高雄市景點</h3>
+        <div class="content__titleDistrict text-primary text-center">
+            高雄市景點
         </div>
         <div class="box row mt-5"></div>
         <div class="paging"></div>
@@ -105,7 +97,7 @@
     </footer>
 
 
-    
+
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"

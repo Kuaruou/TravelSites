@@ -59,15 +59,16 @@ textarea {
     margin: 0 auto;
 }
 
-.titleDistrict h3 {
-    font-weight: 600;
-}
-
 .content {
     max-width: 70%;
     margin: 0 auto;
     /* 保持畫面滿版 */
     min-height: calc(100vh - 400px - 5em)
+}
+
+.titleDistrict {
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .button-info {
